@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>treinstoringen.nl te koop &mdash; &euro; 99 excl. btw</title>
+<meta name="description" content="Bij elke storing typen tienduizenden mensen tegelijk dit woord in.">
+<link rel="canonical" href="https://treinstoringen.nl/">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="treinstoringen.nl te koop">
+<meta property="og:description" content="Bij elke storing typen tienduizenden mensen tegelijk dit woord in.">
+<meta property="og:url" content="https://treinstoringen.nl/">
+<meta property="og:type" content="website">
+<style>
+:root {
+    --inkt:      #16202b;
+    --papier:    #eef0ec;
+    --papier-op: #f7f8f5;
+    --lijn:      #d2d7d0;
+    --stempel:   #9c2c2c;
+    --brons:     #7d6f45;
+    --gedempt:   #5d6a63;
+
+    --mono: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, monospace;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --inkt:      #e6e9e4;
+      --papier:    #10171d;
+      --papier-op: #17202a;
+      --lijn:      #2b3742;
+      --stempel:   #d97a72;
+      --brons:     #b8a774;
+      --gedempt:   #93a29b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --inkt:      #e6e9e4;
+    --papier:    #10171d;
+    --papier-op: #17202a;
+    --lijn:      #2b3742;
+    --stempel:   #d97a72;
+    --brons:     #b8a774;
+    --gedempt:   #93a29b;
+  }
+  :root[data-theme="light"] {
+    --inkt:      #16202b;
+    --papier:    #eef0ec;
+    --papier-op: #f7f8f5;
+    --lijn:      #d2d7d0;
+    --stempel:   #9c2c2c;
+    --brons:     #7d6f45;
+    --gedempt:   #5d6a63;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--papier);
+    color: var(--inkt);
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 1.6rem; }
+
+  /* ---------- eerste scherm ---------- */
+  .akte { position: relative; border-bottom: 1px solid var(--lijn); }
+
+  .akte .wrap {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+    gap: 3.2rem;
+    padding-block: clamp(2.4rem, 6vw, 4.2rem);
+    align-items: start;
+  }
+
+  .eyebrow {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--stempel);
+    color: var(--papier-op);
+    font-family: var(--sans);
+    font-weight: 800;
+    font-size: clamp(.86rem, 1.9vw, 1.12rem);
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .78rem 1rem;
+    margin: 0 0 1.6rem;
+  }
+
+  .naam {
+    font-family: var(--mono);
+    font-size: clamp(2.1rem, 6.6vw, 4.1rem);
+    line-height: 1.02;
+    letter-spacing: -.03em;
+    margin: 0;
+    word-break: break-word;
+  }
+  .naam .tld { color: var(--stempel); }
+
+  .streep { height: 1px; background: var(--inkt); opacity: .22; margin: 1.5rem 0 1.4rem; }
+
+  .pitch {
+    font-size: clamp(1.05rem, 2.1vw, 1.28rem);
+    line-height: 1.5;
+    margin: 0;
+    max-width: 34ch;
+    text-wrap: balance;
+  }
+
+  .koop { display: flex; align-items: center; gap: 2.2rem; flex-wrap: wrap; margin-top: 2rem; }
+  .prijsblok { display: flex; flex-direction: column; gap: .6rem; align-items: flex-start; }
+
+  .prijs { line-height: 1.05; }
+  .prijs b {
+    display: block;
+    font-family: var(--mono);
+    font-size: clamp(1.9rem, 4.6vw, 2.6rem);
+    letter-spacing: -.02em;
+    font-variant-numeric: tabular-nums;
+  }
+  .prijs span {
+    font-family: var(--sans);
+    font-size: .78rem;
+    color: var(--gedempt);
+    letter-spacing: .02em;
+  }
+
+  .knop {
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .01em;
+    background: var(--inkt);
+    color: var(--papier);
+    text-decoration: none;
+    padding: .9rem 1.8rem;
+    border: 1px solid var(--inkt);
+    transition: background .15s ease, color .15s ease;
+  }
+  .knop:hover { background: transparent; color: var(--inkt); }
+  .knop:focus-visible { outline: 2px solid var(--stempel); outline-offset: 3px; }
+
+  .btw-schakel {
+    font-family: var(--sans);
+    font-size: .78rem;
+    display: inline-flex;
+    border: 1px solid var(--lijn);
+  }
+  .btw-schakel button {
+    font: inherit;
+    background: none;
+    border: 0;
+    color: var(--gedempt);
+    padding: .42rem .85rem;
+    cursor: pointer;
+  }
+  .btw-schakel button[aria-pressed="true"] { background: var(--inkt); color: var(--papier); }
+  .btw-schakel button:focus-visible { outline: 2px solid var(--stempel); outline-offset: -2px; }
+
+  /* ---------- feitenkaart ---------- */
+  .kaart {
+    background: var(--papier-op);
+    border: 1px solid var(--lijn);
+    padding: 1.5rem 1.6rem;
+  }
+  .kaart h2 {
+    font-family: var(--sans);
+    font-size: .72rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--gedempt);
+    margin: 0 0 1rem;
+    font-weight: 600;
+  }
+  .kaart dl { margin: 0; display: grid; grid-template-columns: 1fr auto; gap: .1rem 1rem; }
+  .kaart dt {
+    font-family: var(--sans);
+    font-size: .86rem;
+    color: var(--gedempt);
+    padding: .52rem 0;
+    border-top: 1px solid var(--lijn);
+  }
+  .kaart dd {
+    margin: 0;
+    padding: .52rem 0;
+    border-top: 1px solid var(--lijn);
+    text-align: right;
+    font-family: var(--mono);
+    font-size: .92rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .kaart dt:first-of-type, .kaart dl > dt:first-child + dd { border-top: 0; }
+  .kaart .voet {
+    margin: 1.1rem 0 0;
+    font-family: var(--sans);
+    font-size: .78rem;
+    line-height: 1.5;
+    color: var(--gedempt);
+  }
+
+  /* ---------- tekst onder de vouw ---------- */
+  .uitleg .wrap { padding-block: clamp(2.6rem, 6vw, 4rem); display: grid; gap: 2.6rem; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); }
+  .uitleg .overkop {
+    grid-column: 1 / -1;
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--gedempt);
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: .9rem;
+    border-bottom: 1px solid var(--lijn);
+  }
+  .uitleg h2 {
+    font-family: var(--sans);
+    font-size: .74rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--stempel);
+    margin: 0 0 .7rem;
+    font-weight: 600;
+  }
+  .uitleg h3 { font-size: 1.16rem; margin: 0 0 .6rem; line-height: 1.3; text-wrap: balance; }
+  .uitleg p { margin: 0 0 .8rem; max-width: 62ch; }
+  .uitleg p:last-child { margin-bottom: 0; }
+  .uitleg ul { margin: 0; padding-left: 1.1rem; }
+  .uitleg li { margin-bottom: .45rem; }
+
+  .slot { border-top: 1px solid var(--lijn); background: var(--papier-op); }
+  .slot .wrap { padding-block: 2.4rem; display: flex; gap: 1.4rem; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+  .slot p { margin: 0; max-width: 46ch; }
+
+  footer.voet {
+    border-top: 1px solid var(--lijn);
+    font-family: var(--sans);
+    font-size: .78rem;
+    color: var(--gedempt);
+  }
+  footer.voet .wrap { padding-block: 1.4rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  footer.voet a { color: inherit; }
+
+  @media (max-width: 820px) {
+    .akte .wrap { grid-template-columns: 1fr; gap: 2.2rem; }
+  }
+</style>
+</head>
+<body>
+
+<section class="akte">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Deze domeinnaam wordt te koop aangeboden</p>
+      <h1 class="naam">treinstoringen<span class="tld">.nl</span></h1>
+      <div class="streep"></div>
+      <p class="pitch">Bij elke storing typen tienduizenden mensen tegelijk dit woord in.</p>
+
+      <div class="koop">
+        <div class="prijsblok">
+          <p class="prijs">
+            <b data-netto="&euro; 99" data-bruto="&euro; 119,79">&euro; 119,79</b>
+            <span id="btw-label">inclusief 21% btw</span>
+          </p>
+          <div class="btw-schakel" role="group" aria-label="Prijzen tonen voor">
+            <button type="button" data-btw="incl" aria-pressed="true">Particulier</button>
+            <button type="button" data-btw="excl" aria-pressed="false">Zakelijk</button>
+          </div>
+        </div>
+        <a class="knop" href="https://domeinnaamdesk.nl/domein/treinstoringen.nl">Koop deze domeinnaam</a>
+      </div>
+    </div>
+
+    <aside class="kaart">
+      <h2>De naam in het kort</h2>
+      <dl>
+        <dt>Lengte</dt><dd>17 tekens</dd>
+        <dt>Extensie</dt><dd>.nl</dd>
+        <dt>Cijfers of streepjes</dt><dd>geen</dd>
+        <dt>Levering</dt><dd>binnen 1 werkdag</dd>
+        <dt>Overdracht</dt><dd>verhuistoken SIDN</dd>
+      </dl>
+      <p class="voet">De prijs geldt voor de domeinnaam. De overdracht loopt via de verhuistoken van SIDN en is meestal binnen één werkdag geregeld.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="uitleg">
+  <div class="wrap">
+    <h2 class="overkop">Over deze domeinnaam</h2>
+    <div>
+      <h2>Waarvoor</h2>
+      <h3>Een onderwerp met dagelijkse pieken</h3>
+      <p>Reisinformatie is een van de weinige onderwerpen waarbij het zoekverkeer binnen een minuut kan verdrievoudigen: één seinstoring bij Utrecht en half Nederland zoekt tegelijk. Dat maakt het aantrekkelijk voor advertenties en voor een app met meldingen.</p>
+      <p>De naam is het woord dat mensen op dat moment gebruiken — niet vertraging, niet reisinformatie, maar storingen. Voor een dienst met live-informatie, een nieuwsbrief of een meldingenapp is dat de kortste weg naar de bezoeker.</p>
+    </div>
+
+    <div>
+      <h2>Waarom deze naam</h2>
+      <h3>Kort, uitspreekbaar, zonder uitleg</h3>
+      <ul>
+        <li>Terugkerend, dagelijks zoekverkeer.</li>
+        <li>Pieken die zich vanzelf herhalen.</li>
+        <li>Geschikt voor app, meldingen en nieuws.</li>
+        <li>Geen streepje, geen cijfer.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Meteen door</h2>
+      <h3>De naam kan vandaag nog aan het werk</h3>
+      <p>Wilt u niet alleen de naam maar ook een ingerichte site, dan bouwen wij die tegen meerprijs: een opzet met rubrieken, twaalf tot twintig artikelen en een contactformulier, klaar om zelf verder te vullen.</p>
+      <p>Liever zelf beginnen? Ook goed. Na de overdracht staat de naam op uw eigen registrar en bent u nergens aan gebonden.</p>
+    </div>
+  </div>
+</section>
+
+<section class="slot">
+  <div class="wrap">
+    <p>Interesse, of een bod dat hiervan afwijkt? Op de aanbodpagina staat een formulier &mdash; u krijgt doorgaans dezelfde dag antwoord.</p>
+    <a class="knop" href="https://domeinnaamdesk.nl/domein/treinstoringen.nl">Koop deze domeinnaam</a>
+  </div>
+</section>
+
+<footer class="voet">
+  <div class="wrap">
+    <span>treinstoringen.nl &mdash; te koop via <a href="https://domeinnaamdesk.nl">Domeinnaamdesk.nl</a></span>
+    <span>Bedragen exclusief btw tenzij anders vermeld</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var bedrag = document.querySelector('.prijs b');
+  var label  = document.getElementById('btw-label');
+  var knoppen = document.querySelectorAll('.btw-schakel button');
+  function zet(modus) {
+    var incl = modus !== 'excl';
+    bedrag.innerHTML = incl ? bedrag.dataset.bruto : bedrag.dataset.netto;
+    label.textContent = incl ? 'inclusief 21% btw' : 'exclusief btw';
+    knoppen.forEach(function (k) {
+      k.setAttribute('aria-pressed', String((k.dataset.btw === 'excl') === (modus === 'excl')));
+    });
+  }
+  knoppen.forEach(function (k) {
+    k.addEventListener('click', function () { zet(k.dataset.btw); });
+  });
+})();
+</script>
+</body>
+</html>
